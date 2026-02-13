@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="유창열 Backend Engineer 포트폴리오">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f9ff"/>
+      <stop offset="100%" stop-color="#e7f0ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="140" cy="90" r="210" fill="#dce9ff" opacity="0.55"/>
+  <circle cx="1120" cy="540" r="240" fill="#d6ecff" opacity="0.45"/>
+  <rect x="84" y="96" width="1032" height="438" rx="28" fill="#ffffff" stroke="#d8e4f5" stroke-width="2"/>
+
+  <text x="140" y="210" fill="#1a2b45" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="56" font-weight="800">유창열</text>
+  <text x="140" y="276" fill="#2f4870" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="36" font-weight="700">Backend Engineer Portfolio</text>
+  <text x="140" y="352" fill="#4b6282" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" font-weight="500">운영 지표 기반 병목 제거 · 메시징/인증/운영 최적화</text>
+
+  <rect x="140" y="404" width="260" height="62" rx="12" fill="#1f6feb"/>
+  <text x="173" y="446" fill="#ffffff" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="28" font-weight="700">inshakr2.github.io</text>
+</svg>
