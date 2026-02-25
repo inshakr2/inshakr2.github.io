@@ -610,6 +610,22 @@ img {
   min-height: 190px;
 }
 
+.frame-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(20, 86, 209, 0.4);
+  background: linear-gradient(135deg, rgba(31, 103, 255, 0.2), rgba(0, 163, 255, 0.12));
+  color: #134abf;
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
 .now-next {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
