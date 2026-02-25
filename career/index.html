@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Career | 유창열</title>
-  <meta name="description" content="유창열의 경력 요약: 운영 최적화, OAuth/OIDC 인증, 메시징 시스템 구축 경험." />
+  <meta name="description" content="유창열의 경력 요약: 운영 성능 개선, OAuth/OIDC 인증 서버 구축, 메시징 시스템 운영 경험." />
   <link rel="canonical" href="https://inshakr2.github.io/career/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Career | 유창열" />
-  <meta property="og:description" content="기간 역순으로 정리한 경력 및 핵심 성과" />
+  <meta property="og:description" content="기간 역순 경력과 핵심 성과 지표" />
   <meta property="og:url" content="https://inshakr2.github.io/career/" />
   <meta property="og:image" content="https://inshakr2.github.io/assets/og/cover.svg" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -19,69 +19,101 @@
     <div class="nav-inner">
       <div class="brand"><a href="/">Chany<span class="dot">.</span></a></div>
       <nav class="nav-links" aria-label="주요 메뉴">
-        <a data-nav href="/">Home</a>
-        <a data-nav href="/projects/">Projects</a>
-        <a data-nav href="/career/">Career</a>
-        <a data-nav href="/about/">About</a>
+        <a data-nav="true" href="/">Home</a>
+        <a data-nav="true" href="/projects/">Projects</a>
+        <a data-nav="true" href="/career/">Career</a>
+        <a data-nav="true" href="/about/">About</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <div class="section-head top-gap">
-      <div>
-        <h1 class="page-title">Career</h1>
-        <p class="sub">회사를 최신순으로 나열했습니다.</p>
+    <section class="page-hero" data-animate="up">
+      <p class="section-label">Career</p>
+      <h1>운영 환경에서 성과를 증명한 백엔드 경력</h1>
+      <p>최근 경력을 최신순으로 정리했습니다. 각 경험은 숫자 성과와 구조 개선 중심으로 작성했습니다.</p>
+    </section>
+
+    <section class="section" data-animate="up">
+      <div class="timeline-wrap">
+        <ol class="timeline-list" data-timeline="career">
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>비로보틱스 · Backend Engineer</h3>
+              <span class="when">2025.04 - 2025.08</span>
+            </div>
+            <p>배민 로봇 관제/호출벨 시스템과 백오피스 운영 구조를 개선했습니다.</p>
+            <p class="timeline-impact">커넥션 1.5x · CPU 30% 개선 · AWS 비용 월 $3,500 절감 · 호출 지연 5s 제거</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>맥스트 · Backend Engineer</h3>
+              <span class="when">2023.05 - 2024.10</span>
+            </div>
+            <p>OAuth 2.0 인증 서버, 메시지 서버, 삼성전자 SI 고도화 프로젝트를 수행했습니다.</p>
+            <p class="timeline-impact">OIDC/PKCE/Device 인증 적용 · MQTT 메시징 서버 구축 · 삼성전자 프로젝트 개발 PM 수행 · 조회 10s -> 1s 개선</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>새롬정보시스템 · Software Engineer</h3>
+              <span class="when">2020.03 - 2023.05</span>
+            </div>
+            <p>신한AI 운영 자동화와 LGES 비정형 데이터 파이프라인 구축/고도화를 담당했습니다.</p>
+            <p class="timeline-impact">배치 장애율 90%+ 감소 · KoBERT 검증 공수 80% 축소</p>
+          </li>
+        </ol>
       </div>
-    </div>
+    </section>
 
     <section class="section">
-      <div class="timeline">
-        <article class="item">
+      <div class="career-grid">
+        <article class="career-item" data-animate="up">
           <div class="top">
-            <div class="title">Backend Engineer</div>
-            <div class="when">2025.04 – 2025.08</div>
+            <h3 class="role">Backend Engineer</h3>
+            <span class="when">2025.04 - 2025.08</span>
           </div>
-          <div class="org">우아한형제들 - 비로보틱스</div>
+          <p class="org">우아한형제들 - 비로보틱스</p>
+          <p class="impact-line">Impact: 메시징 병목 제거 + 운영 비용 절감 + 호출 처리 지연 제거</p>
           <ul>
-            <li>서빙 로봇 호출벨 시스템에서 AMQ/MQTT 병목 구간 관제 및 성능 최적화 수행</li>
-            <li>백오피스 운영 구조 개선 및 AWS 비용 월 $3,500 절감</li>
-            <li>Internal Token, OpenSearch 동기화 적용으로 인증/조회 운영 품질 개선</li>
+            <li>AMQ/MQTT 병목 관제 및 토폴로지 개선</li>
+            <li>백오피스 운영 구조 개선 및 서버 간 인증 방식 고도화</li>
+            <li>OpenSearch 동기화로 조회 경로 최적화</li>
           </ul>
-          <p class="reason"><b>퇴사 사유</b> 회사 경영 악화로 인한 모기업의 법인 최소화 결정으로 비자발적 퇴사</p>
+          <p class="reason-note"><b>퇴사 사유</b> 회사 경영 악화로 인한 모기업 법인 최소화 결정으로 비자발적 퇴사</p>
         </article>
 
-        <article class="item">
+        <article class="career-item" data-animate="up">
           <div class="top">
-            <div class="title">Backend Engineer</div>
-            <div class="when">2023.05 – 2024.10</div>
+            <h3 class="role">Backend Engineer</h3>
+            <span class="when">2023.05 - 2024.10</span>
           </div>
-          <div class="org">맥스트</div>
+          <p class="org">맥스트</p>
+          <p class="impact-line">Impact: 인증 표준화 + 실시간 메시징 구축 + 삼성전자 프로젝트 개발 PM 수행 + 대규모 SI 성능 최적화</p>
           <ul>
-            <li>Spring Authorization Server 기반 OAuth 2.0/OIDC 인증 서버 구축 및 SSO 구현</li>
-            <li>RabbitMQ MQTT plugin 기반 메시지 서버 구축 및 연결/권한 관리 기능 개발</li>
-            <li>삼성전자 설비 점검 시스템 고도화 프로젝트에서 개발 PM 수행</li>
+            <li>Spring Authorization Server 기반 OAuth 2.0/OIDC 서버 구축</li>
+            <li>RabbitMQ MQTT plugin 기반 메시징 서버 구축</li>
+            <li>삼성전자 설비 점검 시스템 고도화 프로젝트 개발 PM 수행</li>
           </ul>
-          <p class="reason"><b>퇴사 사유</b> 회사 재무 악화로 인한 희망퇴직/비자발적 퇴사</p>
+          <p class="reason-note"><b>퇴사 사유</b> 회사 재무 악화로 인한 희망퇴직/비자발적 퇴사</p>
         </article>
 
-        <article class="item">
+        <article class="career-item" data-animate="up">
           <div class="top">
-            <div class="title">Software Engineer</div>
-            <div class="when">2020.03 – 2023.05</div>
+            <h3 class="role">Software Engineer</h3>
+            <span class="when">2020.03 - 2023.05</span>
           </div>
-          <div class="org">새롬정보시스템</div>
+          <p class="org">새롬정보시스템</p>
+          <p class="impact-line">Impact: 배치 안정화 + 운영 자동화 + 비정형 데이터 파이프라인 구축</p>
           <ul>
-            <li>신한AI 비정형 분석 시스템 운영 자동화 및 배치 안정화</li>
-            <li>텍스트 추출 프로그램을 API 서버로 전환하며 JPA/QueryDSL 구조 개선</li>
-            <li>LG Energy Solution 사내 포털 구축/고도화 및 비정형 파이프라인 연계</li>
+            <li>신한AI 비정형 분석 시스템 운영 및 유지보수</li>
+            <li>텍스트 추출 API 서버 구축 및 운영 효율 개선</li>
+            <li>LG Energy Solution 사내 포탈 구축/고도화</li>
           </ul>
-          <p class="reason"><b>이직 사유</b> 커리어 개발을 위해 자체 서비스를 가진 기업으로 이직</p>
+          <p class="reason-note"><b>이직 사유</b> 커리어 개발을 위해 자체 서비스를 가진 기업으로 이직</p>
         </article>
       </div>
     </section>
 
-    <hr class="hr" />
     <footer class="footer">
       <div>© <span id="year"></span> 유창열</div>
       <div class="footer-links">

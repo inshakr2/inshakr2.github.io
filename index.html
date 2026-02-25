@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>유창열 | Backend Engineer 포트폴리오</title>
-  <meta name="description" content="운영 지표 기반으로 병목을 제거하고 메시징(AMQ/MQTT), OAuth/OIDC 인증, 백오피스 운영 효율을 개선한 백엔드 엔지니어 유창열의 포트폴리오." />
+  <title>유창열 | Backend Engineer Portfolio</title>
+  <meta name="description" content="성과 지표 중심으로 병목 제거, 인증/메시징 구조 개선, 운영 효율 최적화를 수행한 백엔드 엔지니어 유창열의 포트폴리오." />
   <link rel="canonical" href="https://inshakr2.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
-  <meta property="og:title" content="유창열 | Backend Engineer 포트폴리오" />
-  <meta property="og:description" content="문제-접근-성과 중심으로 정리한 백엔드 프로젝트와 경력 요약." />
+  <meta property="og:title" content="유창열 | Backend Engineer Portfolio" />
+  <meta property="og:description" content="Problem-Action-Impact 중심의 백엔드 프로젝트와 경력 성과 요약" />
   <meta property="og:url" content="https://inshakr2.github.io/" />
   <meta property="og:image" content="https://inshakr2.github.io/assets/og/cover.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="유창열 | Backend Engineer 포트폴리오" />
-  <meta name="twitter:description" content="운영 지표 기반 성능/안정성 개선 사례와 프로젝트 성과 요약" />
+  <meta name="twitter:title" content="유창열 | Backend Engineer Portfolio" />
+  <meta name="twitter:description" content="메시징/인증/운영 효율화 중심 백엔드 성과 포트폴리오" />
   <meta name="twitter:image" content="https://inshakr2.github.io/assets/og/cover.svg" />
   <link rel="stylesheet" href="/assets/style.css" />
   <script type="application/ld+json">
@@ -31,6 +31,7 @@
     "knowsAbout": [
       "Java",
       "Spring Boot",
+      "Spring WebFlux",
       "AMQ",
       "MQTT",
       "OAuth 2.0",
@@ -46,304 +47,304 @@
     <div class="nav-inner">
       <div class="brand"><a href="/">Chany<span class="dot">.</span></a></div>
       <nav class="nav-links" aria-label="주요 메뉴">
-        <a data-nav href="/">Home</a>
-        <a data-nav href="/projects/">Projects</a>
-        <a data-nav href="/career/">Career</a>
-        <a data-nav href="/about/">About</a>
+        <a data-nav="true" href="/">Home</a>
+        <a data-nav="true" href="/projects/">Projects</a>
+        <a data-nav="true" href="/career/">Career</a>
+        <a data-nav="true" href="/about/">About</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero" aria-labelledby="hero-title">
-      <p class="kicker">Backend Engineer</p>
-      <h1 id="hero-title">유창열</h1>
-      <p class="lead">
-        실서비스 운영에서 발생하는 병목을 지표로 드러내고,<br class="hero-break" />
-        메시징·인증·운영 구조를 재설계해 성능과 안정성을 함께 개선합니다.
-      </p>
+      <article class="hero-main" data-animate="left">
+        <p class="kicker">Backend Engineer · Impact First</p>
+        <h1 id="hero-title" class="hero-title">유창열
+          <span>서비스 병목을 수치로 발견하고, 구조로 해결합니다.</span>
+        </h1>
+        <p class="hero-lead">
+          운영 지표로 문제를 계측하고, 메시징·인증·백오피스 아키텍처를 재설계해
+          <b>성능, 안정성, 비용</b>을 동시에 개선합니다.
+        </p>
+        <div class="hero-points" aria-label="핵심 소개">
+          <p class="hero-point">운영 지표에서 병목을 포착하고, 트래픽 흐름에 맞게 시스템 구조를 재설계합니다.</p>
+          <p class="hero-point">메시징, 인증, 백오피스 운영을 한 번에 연결해 서비스 체감 품질을 개선합니다.</p>
+          <p class="hero-point">개선 결과를 수치로 검증하고 운영 표준으로 고정해 재발 가능성을 낮춥니다.</p>
+        </div>
 
-      <div class="actions">
-        <a class="btn primary" href="#projects">프로젝트 보기</a>
-        <a class="btn" href="https://github.com/inshakr2" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn" href="mailto:inshakr2@gmail.com">Email</a>
-      </div>
+        <div class="actions">
+          <a class="btn primary" href="#featured-projects">Featured Projects</a>
+          <a class="btn" href="https://github.com/inshakr2" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="mailto:inshakr2@gmail.com">Email</a>
+        </div>
 
-      <nav class="section-nav" aria-label="홈 섹션 이동">
-        <a data-section-link href="#impact">Impact</a>
-        <a data-section-link href="#projects">Projects</a>
-        <a data-section-link href="#career">Career</a>
-        <a data-section-link href="#about">About</a>
-        <a data-section-link href="#contact">Contact</a>
-      </nav>
+        <nav class="section-jump" aria-label="홈 섹션 이동">
+          <a data-section-link="true" href="#featured-projects">Projects</a>
+          <a data-section-link="true" href="#impact-timeline">Timeline</a>
+          <a data-section-link="true" href="#system-thinking">System Thinking</a>
+          <a data-section-link="true" href="#now-next">Now / Next</a>
+          <a data-section-link="true" href="#contact">Contact</a>
+        </nav>
+      </article>
+
+      <aside class="command-center" id="impact-dashboard" aria-label="핵심 성과 지표" data-animate="right">
+        <h2 class="command-title">KPI 성과 현황</h2>
+        <p class="command-sub">운영 환경에서 검증한 핵심 성과를 요약했습니다.</p>
+        <div class="command-grid">
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">1.5x</p>
+            <p class="kpi-label">커넥션 수용량 확대</p>
+            <p class="kpi-desc">AMQ Mesh -> Concentrator 토폴로지 전환</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">30%</p>
+            <p class="kpi-label">피크 CPU 사용률 개선</p>
+            <p class="kpi-desc">90%+ 병목 구간 완화 및 안정 운영</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">$3,500</p>
+            <p class="kpi-label">월 클라우드 비용 절감</p>
+            <p class="kpi-desc">리소스 전수 조사 + 미사용 자산 정리</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">5s -> 0s</p>
+            <p class="kpi-label">호출벨 고정 지연 제거</p>
+            <p class="kpi-desc">Heartbeat 기반 즉시 처리 핸들러 적용</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">10s -> 1s</p>
+            <p class="kpi-label">트리 조회 성능 개선</p>
+            <p class="kpi-desc">계층형 쿼리 전환 + 인덱스 최적화</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">90%+</p>
+            <p class="kpi-label">배치 장애율 감소</p>
+            <p class="kpi-desc">운영 자동화/이상 탐지 체계 구축</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">80%</p>
+            <p class="kpi-label">검증 공수 절감</p>
+            <p class="kpi-desc">KoBERT 학습 데이터 검증 자동화</p>
+          </article>
+          <article class="kpi-card" data-kpi="true" data-animate="up">
+            <p class="kpi-value">2 Stores</p>
+            <p class="kpi-label">모바일 앱 출시</p>
+            <p class="kpi-desc">Android/iOS 배포 및 운영 안정화</p>
+          </article>
+        </div>
+      </aside>
     </section>
 
-    <section class="section" id="impact" data-section>
-      <div class="section-head">
+    <span id="projects" class="anchor-target" aria-hidden="true"></span>
+    <section class="section" id="featured-projects" data-section="true">
+      <div class="section-head" data-animate="up">
         <div>
-          <h2>Impact</h2>
-          <p class="sub">운영 환경에서 확인된 핵심 성과 지표입니다.</p>
+          <p class="section-label">Featured Case Studies</p>
+          <h2>핵심 프로젝트 4선</h2>
+          <p class="sub">문제-액션-성과가 명확한 프로젝트를 우선 배치했습니다.</p>
         </div>
+        <div class="more"><a href="/projects/">전체 9개 프로젝트 보기</a></div>
       </div>
-      <div class="impact-grid">
-        <article class="impact-card">
-          <p class="metric">1.5x</p>
-          <p class="label">커넥션 수용량 확대</p>
-          <p class="desc">AMQ 토폴로지 Mesh → Concentrator 전환</p>
+
+      <div class="grid-2">
+        <article class="case-card" data-animate="up">
+          <h3 class="case-title">배민 서빙 로봇 관제 최적화</h3>
+          <p class="case-summary">피크 타임 브로커 병목과 호출벨 고정 지연을 구조적으로 해소한 운영 최적화 프로젝트</p>
+          <div class="metric-strip">
+            <span class="metric-pill">커넥션 1.5x</span>
+            <span class="metric-pill">CPU 30% 개선</span>
+            <span class="metric-pill">지연 5s -> 0s</span>
+          </div>
+          <p class="case-meta">AMQ · MQTT · Spring WebFlux · Redis</p>
+          <div class="actions"><a class="btn" href="/projects/#br-ra">상세 보기</a></div>
         </article>
-        <article class="impact-card">
-          <p class="metric">30%</p>
-          <p class="label">피크 CPU 사용률 개선</p>
-          <p class="desc">90%+ 구간을 안정 운영 가능한 수준으로 완화</p>
+
+        <article class="case-card" data-animate="up">
+          <h3 class="case-title">백오피스 운영 구조 개선</h3>
+          <p class="case-summary">비용 가시화, 서버 간 인증 개선, 검색 성능 향상을 동시에 수행한 백오피스 개선 프로젝트</p>
+          <div class="metric-strip">
+            <span class="metric-pill">AWS $3,500/mo 절감</span>
+            <span class="metric-pill">무중단 Internal Token 도입</span>
+            <span class="metric-pill">RDS/OpenSearch 싱크</span>
+          </div>
+          <p class="case-meta">Spring Boot · Gateway · OpenSearch · AWS</p>
+          <div class="actions"><a class="btn" href="/projects/#br-b-portal">상세 보기</a></div>
         </article>
-        <article class="impact-card">
-          <p class="metric">$3,500/mo</p>
-          <p class="label">클라우드 비용 절감</p>
-          <p class="desc">미사용 리소스 정리 및 운영 구조 가시화</p>
+
+        <article class="case-card" data-animate="up">
+          <h3 class="case-title">OAuth 2.0 인증 서버 구축</h3>
+          <p class="case-summary">Keycloak 레거시를 전환하고 OIDC/PKCE/Device 인증을 포함한 통합 로그인 플랫폼 구축</p>
+          <div class="metric-strip">
+            <span class="metric-pill">OIDC + PKCE 적용</span>
+            <span class="metric-pill">Device 인증 커스텀</span>
+            <span class="metric-pill">SSO 재로그인 최소화</span>
+          </div>
+          <p class="case-meta">Spring Authorization Server · OAuth 2.0 · Redis</p>
+          <div class="actions"><a class="btn" href="/projects/#oauth-server">상세 보기</a></div>
         </article>
-        <article class="impact-card">
-          <p class="metric">5s → 0s</p>
-          <p class="label">호출벨 고정 지연 제거</p>
-          <p class="desc">Heartbeat 기반 즉시 처리 핸들러 적용</p>
+
+        <article class="case-card" data-animate="up">
+          <h3 class="case-title">Beanchive 앱 출시</h3>
+          <p class="case-summary">개인 프로젝트에서 인증·인프라를 책임지고 Android/iOS 출시 및 운영 자동화를 완성</p>
+          <div class="metric-strip">
+            <span class="metric-pill">Android/iOS 출시</span>
+            <span class="metric-pill">OAuth + JWT 인증</span>
+            <span class="metric-pill">인증서 자동 갱신</span>
+          </div>
+          <p class="case-meta">Java · MySQL · Redis · Cloudflare · Nginx</p>
+          <div class="actions"><a class="btn" href="/projects/#beanchive">상세 보기</a></div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projects" data-section>
-      <div class="section-head">
+    <span id="career" class="anchor-target" aria-hidden="true"></span>
+    <section class="section" id="impact-timeline" data-section="true">
+      <div class="section-head" data-animate="up">
         <div>
-          <h2>Featured Projects</h2>
-          <p class="sub">대표 프로젝트 4개를 소개합니다.</p>
+          <p class="section-label">Impact Timeline</p>
+          <h2>연차별 핵심 임팩트</h2>
+          <p class="sub">최근 경력에서 문제를 해결한 방식과 숫자 성과를 타임라인으로 정리했습니다.</p>
         </div>
-        <div class="more"><a href="/projects/">상세 프로젝트 문서 보기</a></div>
+        <div class="more"><a href="/career/">Career 상세 보기</a></div>
       </div>
-
-      <div class="grid">
-        <article class="card">
-          <h3>배민 서빙 로봇 호출벨 시스템 관제·최적화</h3>
-          <p>Spring WebFlux 기반 호출벨 서버를 운영하며 피크 타임 병목과 장애 대응 체계를 개선했습니다.</p>
-          <div class="kpi">
-            <b>성과</b>
-            <ul>
-              <li>Mesh → Concentrator 전환으로 커넥션 수용량 1.5배</li>
-              <li>피크 CPU 사용률 30% 개선</li>
-              <li>호출벨 처리 고정 5초 지연 제거</li>
-            </ul>
-          </div>
-          <div class="meta">
-            <span class="tag">AMQ</span><span class="tag">MQTT</span><span class="tag">Spring WebFlux</span><span class="tag">Redis</span>
-          </div>
-          <div class="actions compact">
-            <a class="btn" href="/projects/#br-ra">상세 보기</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>배민 로봇 백오피스 시스템 개발·운영</h3>
-          <p>운영 비용, 인증 품질, 조회 성능을 동시에 개선한 백오피스 프로젝트입니다.</p>
-          <div class="kpi">
-            <b>성과</b>
-            <ul>
-              <li>AWS 비용 월 $3,500 절감</li>
-              <li>WebSocket 연동으로 폐쇄망 API 호출 구조 개선</li>
-              <li>RDS ↔ OpenSearch 동기화 기반 조회 성능 개선</li>
-            </ul>
-          </div>
-          <div class="meta">
-            <span class="tag">Spring Boot</span><span class="tag">Gateway</span><span class="tag">OpenSearch</span><span class="tag">AWS</span>
-          </div>
-          <div class="actions compact">
-            <a class="btn" href="/projects/#br-b-portal">상세 보기</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>OAuth 2.0 인증 서버 개발</h3>
-          <p>Spring Authorization Server 기반 통합 로그인 서버를 구축하고 OIDC/PKCE/Device 인증을 커스텀 적용했습니다.</p>
-          <div class="kpi">
-            <b>성과</b>
-            <ul>
-              <li>Keycloak 레거시 전환 및 인증 흐름 표준화</li>
-              <li>WebView 세션 기반 SSO 구현으로 재로그인 최소화</li>
-              <li>OIDC/PKCE 및 Device 인증 플로우 운영 적용</li>
-            </ul>
-          </div>
-          <div class="meta">
-            <span class="tag">OAuth 2.0</span><span class="tag">OIDC</span><span class="tag">PKCE</span><span class="tag">Spring Authorization Server</span>
-          </div>
-          <div class="actions compact">
-            <a class="btn" href="/projects/#oauth-server">상세 보기</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>커피 테이스팅 노트 기록 App 출시</h3>
-          <p>개인 프로젝트에서 Backend/Infra를 담당하며 Android/iOS 출시와 인증·운영 안정화를 함께 수행했습니다.</p>
-          <div class="kpi">
-            <b>성과</b>
-            <ul>
-              <li>Android/iOS 스토어 출시 및 운영</li>
-              <li>OAuth + JWT 인증/인가 적용</li>
-              <li>Cloudflare·Nginx·인증서 자동갱신 기반 운영 안정화</li>
-            </ul>
-          </div>
-          <div class="meta">
-            <span class="tag">Spring</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">Nginx</span>
-          </div>
-          <div class="actions compact">
-            <a class="btn" href="/projects/#beanchive">상세 보기</a>
-          </div>
-        </article>
+      <div class="timeline-wrap" data-animate="up">
+        <ol class="timeline-list" data-timeline="home">
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>2025 · 비로보틱스</h3>
+              <span class="when">Backend Engineer</span>
+            </div>
+            <p>서빙 로봇 관제 시스템 운영 병목을 계측하고 브로커/처리 구조를 최적화했습니다.</p>
+            <p class="timeline-impact">커넥션 1.5x · CPU 30% 개선 · 호출 지연 5s 제거</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>2024 · 맥스트</h3>
+              <span class="when">Backend Engineer</span>
+            </div>
+            <p>통합 로그인 플랫폼과 메시징 서버를 설계·구축해 인증/실시간 통신 품질을 높였습니다.</p>
+            <p class="timeline-impact">OAuth 2.0 전환 · OIDC/PKCE 적용 · MQTT 서버 운영화 · 삼성전자 프로젝트 개발 PM 수행</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-title">
+              <h3>2020-2023 · 새롬정보시스템</h3>
+              <span class="when">Software Engineer</span>
+            </div>
+            <p>배치 운영 안정화 및 데이터 파이프라인 자동화를 통해 반복 업무와 장애를 줄였습니다.</p>
+            <p class="timeline-impact">배치 장애율 90%+ 감소 · 검증 공수 80% 축소</p>
+          </li>
+        </ol>
       </div>
-
-      <details class="fold" id="other-projects">
-        <summary>Other Projects</summary>
-        <div class="fold-content">
-          <article class="card compact-card">
-            <h3>청소로봇 원격제어 시스템 PoC</h3>
-            <p>로봇 연동과 실시간 HeartBeat 수신 구조를 포함한 원격 제어 MVP를 구축했습니다.</p>
-            <div class="meta">
-              <span class="tag">Spring Boot</span><span class="tag">WebSocket</span><span class="tag">WebClient</span><span class="tag">Redis</span>
-            </div>
-            <div class="actions compact">
-              <a class="btn" href="/projects/#cleanbot-poc">상세 보기</a>
-            </div>
-          </article>
-
-          <article class="card compact-card">
-            <h3>메세지 서버 구축</h3>
-            <p>RabbitMQ MQTT plugin 기반 채팅·알람 서버를 구축하고 Connection/권한 관리 체계를 설계했습니다.</p>
-            <div class="meta">
-              <span class="tag">RabbitMQ</span><span class="tag">MQTT</span><span class="tag">Spring Modulith</span><span class="tag">Redis</span>
-            </div>
-            <div class="actions compact">
-              <a class="btn" href="/projects/#message-server">상세 보기</a>
-            </div>
-          </article>
-
-          <article class="card compact-card">
-            <h3>삼성전자 설비 점검 시스템 고도화</h3>
-            <p>개발 PM 역할로 일정/요구사항/DB 성능 개선을 주도하며 트리 조회 성능을 10초에서 1초로 개선했습니다.</p>
-            <div class="meta">
-              <span class="tag">Java</span><span class="tag">Oracle</span><span class="tag">MyBatis</span><span class="tag">JSON-RPC</span>
-            </div>
-            <div class="actions compact">
-              <a class="btn" href="/projects/#samsung-si">상세 보기</a>
-            </div>
-          </article>
-
-          <article class="card compact-card">
-            <h3>신한AI 비정형 데이터 분석 시스템 운영</h3>
-            <p>Java/Python 배치 운영 안정화로 장애율을 90% 이상 낮추고 모니터링 자동화를 구축했습니다.</p>
-            <div class="meta">
-              <span class="tag">Spring</span><span class="tag">Jenkins</span><span class="tag">Impala</span><span class="tag">Hadoop</span>
-            </div>
-            <div class="actions compact">
-              <a class="btn" href="/projects/#shinhan-ai">상세 보기</a>
-            </div>
-          </article>
-
-          <article class="card compact-card">
-            <h3>LG Energy Solution 사내 포탈 구축/고도화</h3>
-            <p>비정형 데이터 파이프라인과 KoBERT 검증 자동화를 구축해 데이터 검증 공수를 80% 축소했습니다.</p>
-            <div class="meta">
-              <span class="tag">Spring</span><span class="tag">WEX</span><span class="tag">Python</span><span class="tag">KoBERT</span>
-            </div>
-            <div class="actions compact">
-              <a class="btn" href="/projects/#lg-portal">상세 보기</a>
-            </div>
-          </article>
-
-        </div>
-      </details>
     </section>
 
-    <section class="section" id="career" data-section>
-      <div class="section-head">
+    <span id="about" class="anchor-target" aria-hidden="true"></span>
+    <section class="section" id="system-thinking" data-section="true">
+      <div class="section-head" data-animate="up">
         <div>
-          <h2>Career Snapshot</h2>
-          <p class="sub">최근 경력 중심 요약입니다. 전체 이력은 상세 페이지에서 확인할 수 있습니다.</p>
+          <p class="section-label">System Thinking</p>
+          <h2>백엔드 문제 해결 프레임</h2>
+          <p class="sub">재발 방지까지 포함해 운영 시스템을 개선하는 방법론입니다.</p>
         </div>
-        <div class="more"><a href="/career/">전체 경력 보기</a></div>
       </div>
-
-      <div class="timeline">
-        <article class="item">
-          <div class="top">
-            <div class="title">Backend Engineer</div>
-            <div class="when">2025.04 – 2025.08</div>
-          </div>
-          <div class="org">우아한형제들 - 비로보틱스</div>
+      <div class="system-grid">
+        <article class="system-card" data-animate="up">
+          <header class="frame-head">
+            <span class="frame-num" aria-label="1단계">01</span>
+            <h3>Observe</h3>
+          </header>
+          <p>메트릭, 로그, 트레이스를 우선 확인해 문제를 숫자로 정의합니다.</p>
           <ul>
-            <li>서빙 로봇 호출벨 시스템 관제 및 AMQ/MQTT 병목 최적화</li>
-            <li>백오피스 운영 효율화 및 AWS 비용 월 $3,500 절감</li>
-            <li>Internal Token·OpenSearch 기반 운영 품질 개선</li>
+            <li>병목 구간 식별</li>
+            <li>영향 범위 정량화</li>
+            <li>운영 지표 기준선 설정</li>
           </ul>
         </article>
-
-        <article class="item">
-          <div class="top">
-            <div class="title">Backend Engineer</div>
-            <div class="when">2023.05 – 2024.10</div>
-          </div>
-          <div class="org">맥스트</div>
+        <article class="system-card" data-animate="up">
+          <header class="frame-head">
+            <span class="frame-num" aria-label="2단계">02</span>
+            <h3>Redesign</h3>
+          </header>
+          <p>단순 패치보다 토폴로지/플로우 관점에서 구조를 재설계합니다.</p>
           <ul>
-            <li>OAuth 2.0/OIDC 기반 인증 서버 구축 및 SSO 구현</li>
-            <li>RabbitMQ MQTT plugin 기반 메시지 서버 구축</li>
-            <li>삼성전자 설비 점검 시스템 고도화 프로젝트 PM 수행</li>
+            <li>메시징 토폴로지 개선</li>
+            <li>인증 플로우 표준화</li>
+            <li>검색/조회 경로 재구성</li>
+          </ul>
+        </article>
+        <article class="system-card" data-animate="up">
+          <header class="frame-head">
+            <span class="frame-num" aria-label="3단계">03</span>
+            <h3>Guardrail</h3>
+          </header>
+          <p>재발을 막기 위해 운영 자동화와 관측 포인트를 함께 남깁니다.</p>
+          <ul>
+            <li>모니터링 자동화</li>
+            <li>무중단 전환 전략</li>
+            <li>운영 기준 문서화</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="section" id="about" data-section>
-      <div class="section-head">
+    <section class="section" id="now-next" data-section="true">
+      <div class="section-head" data-animate="up">
         <div>
-          <h2>Tech &amp; Work Style</h2>
-          <p class="sub">구조적 문제를 재발하지 않게 고치는 방식으로 일합니다.</p>
+          <p class="section-label">Now / Next</p>
+          <h2>현재 집중 영역과 다음 확장</h2>
+          <p class="sub">운영 백엔드 역량을 기반으로 확장하고 있는 기술 축입니다.</p>
         </div>
-        <div class="more"><a href="/about/">소개 페이지 보기</a></div>
       </div>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Work Style</h3>
-          <ul class="plain-list">
-            <li>지표로 병목을 수치화하고 우선순위를 정합니다.</li>
-            <li>점진 전환으로 운영 리스크를 낮춘 뒤 검증합니다.</li>
-            <li>문제 해결 이후 운영 자동화까지 포함해 마무리합니다.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Core Stack</h3>
-          <div class="meta">
-            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">WebFlux</span>
-            <span class="tag">AMQ/MQTT</span><span class="tag">OAuth 2.0/OIDC</span><span class="tag">Redis</span>
-            <span class="tag">MariaDB/MySQL</span><span class="tag">OpenSearch</span><span class="tag">AWS</span>
+      <div class="now-next">
+        <article class="now-next-block" data-animate="left">
+          <h3>Now</h3>
+          <p>운영 중인 서비스에서 메시징/인증/백오피스 성능을 개선하고, 인프라 운영 안정성까지 함께 고도화하고 있습니다.</p>
+          <div class="stack-cloud">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Spring WebFlux</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">AMQ/MQTT</span>
+            <span class="tag">OAuth 2.0 / OIDC</span>
+            <span class="tag">Redis</span>
+            <span class="tag">OpenSearch</span>
           </div>
         </article>
+        <article class="now-next-block" data-animate="right">
+          <h3>Next</h3>
+          <p>확장 가능한 플랫폼을 위한 아키텍처 설계 역량을 강화하고, 구현 속도를 높이는 실전형 개발 방식을 실험 중입니다.</p>
+          <ul>
+            <li>실시간 메시징 운영 표준화</li>
+            <li>아키텍처 설계 분야 심화(도메인 분리, 경계 정의, 확장 전략)</li>
+            <li>인증 서버 고가용성 패턴 강화</li>
+            <li>바이브 코딩 기반 고속 프로토타이핑과 검증 루프 최적화</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="contact" data-section>
-      <div class="card">
-        <h2 style="margin:0 0 8px;">Contact</h2>
-        <p class="sub">협업, 인터뷰, 상세 경력 문의는 이메일 또는 GitHub로 연락 부탁드립니다.</p>
+    <section class="section" id="contact" data-section="true">
+      <div class="contact-card" data-animate="up">
+        <p class="section-label">Contact</p>
+        <h2>협업 제안이나 포지션 문의를 환영합니다.</h2>
+        <p class="sub">이메일을 가장 빠르게 확인합니다. 프로젝트 상세는 Projects/Career 탭에서 확인 가능합니다.</p>
         <div class="actions">
           <a class="btn primary" href="mailto:inshakr2@gmail.com">Email</a>
           <a class="btn" href="https://github.com/inshakr2" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="/career/">Career</a>
         </div>
       </div>
     </section>
 
-    <hr class="hr" />
     <footer class="footer">
       <div>© <span id="year"></span> 유창열</div>
       <div class="footer-links">
+        <a href="/">Home</a>
         <a href="/projects/">Projects</a>
         <a href="/career/">Career</a>
         <a href="/about/">About</a>
-        <a href="mailto:inshakr2@gmail.com">Email</a>
       </div>
     </footer>
   </main>
