@@ -610,20 +610,32 @@ img {
   min-height: 190px;
 }
 
+.frame-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
 .frame-num {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  border: 1px solid rgba(20, 86, 209, 0.4);
-  background: linear-gradient(135deg, rgba(31, 103, 255, 0.2), rgba(0, 163, 255, 0.12));
-  color: #134abf;
-  font-family: 'Archivo', sans-serif;
-  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: #0f44a9;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.system-card h3 {
+  margin: 0;
 }
 
 .now-next {
