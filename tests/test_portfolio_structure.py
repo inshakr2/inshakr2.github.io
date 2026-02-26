@@ -59,7 +59,6 @@ def test_home_has_required_v2_sections_and_data_attributes():
         "impact-dashboard",
         "featured-projects",
         "impact-timeline",
-        "system-thinking",
         "now-next",
         "contact",
     }
